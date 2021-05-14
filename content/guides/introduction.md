@@ -18,38 +18,37 @@ Se você nunca usou TypeScript, recomendamos aprender o básico da linguagem pri
 
 ## Familiaridade com Node.js 
 
-Esperamos, também, que você tenha familiaridade com o ecossitema Node.js e programação assíncrona no geral. Supomos que você vem de uma linguagem baseada em threads
+Esperamos, também, que você tenha familiaridade com o ecossistema Node.js e programação assíncrona no geral. Supondo que você vem de uma linguagem baseada em threads. Nesse caso, recomendamos tomar conhecimento sobre o event loop do Node.js e entender suas diferenças para um ambiente com threads.
 
-We also expect you to be familiar with the Node.js ecosystem and asynchronous programming in general. Suppose you are coming from a threaded language like PHP or Ruby. In that case, we recommend educating yourself with the Node.js event loop and understand how it is different from a threaded environment.
+## Guias
 
+Os guias técnicos são documentos detalhados do framework e cobrem
+todos os tópicos e funcionalidade do framework.
 
-## Guides
+Os guias também têm documentação para os pacotes oficiais do AdonisJS, ou seja, Lucid ORM, template engine, Redis e outros.
 
-The technical guides are the in-depth documentation of the framework and cover every single topic and feature of the framework.
+## Referência
 
-The guides also have documentation for the official packages of AdonisJS, i.e., Lucid ORM, template engine, Redis, and so on.
+Módulos com maior superfície de API como **Database** e **Validator** também são documentados dentro dos guias de referência
 
-## Reference
-
-Modules with larger API surfaces like **Database** and **Validator** are also documented inside the reference guides.
-
-Fitting all the validation rules, the database query builder methods within guides will overcrowd them, and hence they are moved to the reference guides.
+Colocar todas as regras de validação e métodos do construtor de consultas de banco de dados dentro dos guias vão superlotá-los, portanto, eles serão movidos para guias de referência.
 
 ## Cookbooks
 
-Cookbooks are actionable guides to help you achieve a practical task. Also, feel free to contribute to cookbooks by sending a PR.
+Cookbooks são guias práticos para ajudá-lo a realizar uma tarefa prática. Além disso, fique à vontade para contribuir com cookbooks mandando um PR.
 
-## Editor extensions
+## Extensões para Editores
 
-Editors with support for TypeScript are all you need to work with your AdonisJS applications. However, the following is the list of extensions to enhance your developer experience.
+Editores com suporte para TypeScript são tudo que você precisa para trabalhar com aplicações AdonisJs. No entanto, temos a seguir uma lista com as extensões para aprimorar sua experiência como desenvolvedor.
 
 :::note
 
-We are looking for contributors to add support for edge template syntax to other editors as well. Here is an [extensive syntax guide](https://github.com/edge-js/syntax) to test your integration.
+Procuramos colaboradores para adicionar suporte para sintaxe de template edge em outros editores também. Aqui está um 
+[guia abrangente de sintaxe](https://github.com/edge-js/syntax) para testar sua integração.
 
 :::
 
-- [VS Code edge templating syntax](https://marketplace.visualstudio.com/items?itemName=luongnd.edge) is a community package to syntax highlight the edge templates.
-- [VS code go to controller](https://marketplace.visualstudio.com/items?itemName=stef-k.adonis-js-goto-controller) is a community package to add **click + go to controller** support.
-- [VS code go to view](https://marketplace.visualstudio.com/items?itemName=stef-k.adonis-js-goto-view) is a community package to add **click + go to a template file** support.
-- [Sublime text edge templating syntax](https://github.com/edge-js/edge-sublime) is an official extension to syntax highlight the edge templates.
+- [VS Code edge templating syntax](https://marketplace.visualstudio.com/items?itemName=luongnd.edge) é um pacote comunitário para realce de sintaxe dos template edge.
+- [VS code go to controller](https://marketplace.visualstudio.com/items?itemName=stef-k.adonis-js-goto-controller) é um pacote comunitário para adicionar suporte a **clicar + ir para controller**.
+- [VS code go to view](https://marketplace.visualstudio.com/items?itemName=stef-k.adonis-js-goto-view) é um pacote comunitário para adicionar suporte a **clicar + ir para arquivo template**.
+- [Sublime text edge templating syntax](https://github.com/edge-js/edge-sublime) é uma extensão oficial para realce de sintaxe dos template edge.
