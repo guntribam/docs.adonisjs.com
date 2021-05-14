@@ -1,77 +1,77 @@
 ---
-summary: Getting started by creating and running a new AdonisJS application
+summary: Começar criando e executando uma nova aplicação AdonisJS
 ---
 
-AdonisJS is a Node.js framework and hence it requires Node.js to be installed on your computer. To be precise, we require `Node.js >= 14.15.4`, along with `npm >= 6.0.0`.
+AdonisJs é um framework Node.js e, portanto, requer o Node.js instalado no seu computador. Para ser mais preciso, exigimos `Node.js> = 14.15.4`, junto com` npm> = 6.0.0`.
 
-You can check the Node.js and npm versions by running the following commands.
+Você pode checar a versão do Node.js e npm rodando os comandos a seguir:
 
 ```sh
-# check node.js version
+# checar a versão do node.js
 node -v
 
-# check npm version
+# checar a versão do npm
 npm -v
 ```
+Se você não tem o Node.js instalado, então você pode [baixar o binário](https://nodejs.org/en/download/) para seu sistema operacional a partir do website oficial.
 
-If you don't have Node.js installed, then you can [download the binary](https://nodejs.org/en/download/) for your operating system from the official website.
+Se você é confortável com a linha de comando, recomendamos usar [nvm](https://github.com/nvm-sh/nvm) ou [volta](https://volta.sh/) para instalar e rodar múltiplas versões do Node.js em seu computador.
 
-If you are comfortable with the command line, then we recommend using [nvm](https://github.com/nvm-sh/nvm) or [volta](https://volta.sh/) to install and run multiple versions of Node.js on your computer.
+## Criando um novo projeto
 
-## Creating a new project
-You can create a new project using [npm init](https://docs.npmjs.com/cli/v7/commands/npm-init) or [yarn create](https://classic.yarnpkg.com/en/docs/cli/create/). Both of these tools will download the AdonisJS starter package and starts the installation process.
+Você pode criar um novo projeto usando [npm init](https://docs.npmjs.com/cli/v7/commands/npm-init) ou [yarn create](https://classic.yarnpkg.com/en/docs/cli/create/). Ambas ferramentas baixarão o pacote inicial do AdonisJS e dá início ao processo de instalação
 
 ```sh
 npm init adonis-ts-app@latest hello-world
 
-# If using yarn
+# Usando yarn
 yarn create adonis-ts-app hello-world
 ```
+O processo de instalação solicita as seguintes escolhas.
 
-The installation process prompts for the following selections.
+#### Estrutura do projeto
+Você pode escolher uma entre as seguintes estruturas de projeto:
 
-#### Project structure
-You can choose between one of the following project structures.
-
-- `web` project structure is ideal for creating classic server rendered applications. We configure the support for sessions and also install the AdonisJS template engine.
-- `api` project structure is ideal for creating an API server.
-- `slim` project structure creates the smallest possible AdonisJS application and does not install any additional packages, except the framework core.
-
----
-
-#### Project name
-The name of the project. We define the value of this prompt inside the `package.json` file.
+- `web` estrutura de projeto ideal para criar as clássicas aplicações renderizadas no servidor. Configuramos o suporte à sessões e instalamos o AdonisJS template engine.
+- `api` estrutura de projeto ideal para criar um servidor de API.
+- `slim` estrutura de projeto que cria a menor aplicação AdonisJS possível e não instala nenhum pacote adicional, exceto o núcleo do framework.
 
 ---
 
-#### Configure eslint/prettier
-Optionally, you can configure Eslint and prettier. Both the packages are configured with the opinionated settings used by the AdonisJS core team.
+#### Nome do projeto
+O nome do projeto. Definimos o valor dessa solicitação dentro do arquivo `package.json`.
 
 ---
 
-#### Configure webpack encore
-Optionally, you can also configure [webpack encore](./http/assets-manager.md) to bundle and serve frontend dependencies. 
+#### Configurar eslint/prettier
+Opcionalmente, você pode configurar Eslint e pretier. Ambos pacotes são configurados com as definições utilizadas pelo time principal do AdonisJS
 
-Do note, AdonisJS is a backend framework and does not concern itself with frontend build tools. Hence the webpack setup is optional.
+---
 
-## Starting the development server
-After creating the application, you can start the development server by running the following command.
+#### Configurar webpack encore
+Opcionalmente, você pode configurar [webpack encore](./http/assets-manager.md) para empacotar e servir as dependências de frontend. 
+
+Note que o AdonisJS é um framework backend e não se preocupa com ferramentas de build de frontend. Portanto, a configuração do webpack é opcional
+
+## Iniciar o servidor de desenvolvimento
+Após criar a aplicação, você pode iniciar o servidor de desenvolvimento rodando o comando a seguir:
 
 ```sh
 node ace serve --watch
 ```
 
-- The `serve` command starts the HTTP server and performs in-memory compilition of TypeScript to JavaScript. 
-- The `--watch` flag is meant to watch the file system for changes and restart the server automatically.
+- O comando `serve` inicia o servidor HTTP e realiza compilação em memória de TypeScript para JavaScript
+- A flag `--watch` tem a finalidade de observar modificações no sistema de arquivos e reiniciar automaticamente.
 
-## Compiling for production
-You must always deploy the compiled JavaScript on your production server. You can create the production build by running the following command.
+## Compilando para produção
+Você deve sempre implantar o JavaScript compilado no seu servidor de produção. Você pode criar o build de produção rodando o comando a seguir:
 
 ```sh
 node ace build --production
 ```
 
-The compiled output is written to the `build` folder. You can `cd` into this folder and start the server by running the `serve.js` file directly. Learn more about the [typescript build process](./fundamentals/typescript-build-process.md)
+A saída compilada é gravada na pasta `build`. Você pode fazer `cd` nesta pasta e iniciar o servidor executando o arquivo `serve.js` diretamente. Saiba mais sobre o [processo de build do TypeScript](./fundamentals/typescript-build-process.md)
+
 
 ```sh
 cd build
