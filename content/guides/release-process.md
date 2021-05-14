@@ -1,29 +1,29 @@
-AdonisJS is a collection of several first party packages built around the [core of the framework](https://github.com/adonisjs/core). Whenever, you hear us mentioning the AdonisJS version, just assume that we are talking about the version of the framework core.
+AdonisJs é uma coleção de vários pacotes originais construídos em torno do [núcleo do framework](https://github.com/adonisjs/core). Sempre que você nos ouvir mencionando sobre a versão do AdonisJS, assuma que estamos falando sobre a versão do núcleo do framework.
 
-Every other package like `@adonisjs/lucid`, or `@adonisjs/mail` have their own independent versions and they are free to have their own release cycle.
+Todos os outros pacotes como `@adonisjs/lucid` ou `@adonisjs/mail` têm suas próprias versões independentes e são livres para ter seu próprio ciclo de lançamento.
 
-## Following semver
-Moving forward, we will strictly follow [semantic versioning](https://semver.org/). This also means, what is Adonis 5 today, can quickly become Adonis 8 in a few months, if we introduce and publish new breaking changes.
+## Seguindo semver
+Seguindo em frente, seguiremos estritamente o [versionamento semântico](https://semver.org/). Isso também significa que o que é o Adonis 5 hoje, pode rapidamente se tornar o Adonis 8 em alguns meses, se introduzirmos e publicarmos novas alterações não retrocompatíveis.
 
-- We will bump the patch version, when releasing **critical bug fixes** (ex: 5.2.0 to 5.2.1).
-- The minor version includes **new features** or **non-critical bug fixes**. Also, we will deprecate APIs during a minor release. (ex: 5.2.0 to 5.3.0)
-- When releasing breaking changes, we bump the major version (ex: 5.2.0 to 6.0.0).
+- Iremos aumentar a versão do patch, ao lançar **correções de bugs críticos** (ex: 5.2.0 a 5.2.1).
+- A versão secundária inclui **novas funcionalidades** ou **correções de bugs não-críticos**. Além disso, descontinuaremos o uso de APIs em um lançamento de versão secundária (ex: 5.2.0 to 5.3.0).
+- Ao liberar alterações não retrocompatíveis, aumentaremos a versão principal (ex: 5.2.0 to 6.0.0).
 
-## Introducing breaking changes
-As AdonisJS is getting mature, we take more responsibility of not introducing breaking changes every then and now and all breaking changes **should go through a deprecation and RFC phase**.
+## Introduzindo mudanças não retrocompatíveis
+Conforme o AdonisJS vai amadurecendo, tomaremos responsabilidade de não introduzir mudanças não retrocompatíveis periodicamente e todas as mudanças não retrocompatíveis **devem passar por uma fase de descontinuidade e uma fase RFC**
 
-Before introducing any breaking change, we will publish an [RFC](https://github.com/adonisjs/rfcs) discussing the motivations behind the change. If there is not a major push back, we will go ahead with the change.
+Antes de introduzir mudanças não retrocompatíveis, publicaremos um [RFC](https://github.com/adonisjs/rfcs) discutindo as motivações por trás da mudança. Se não houver um grande retrocesso, prosseguiremos com a mudança.
 
-The initial phase of the change will deprecate the existing APIs during a minor release. Running your application after this change will get a lot of warnings, but nothing will break and continue to work as it is.
+A fase inicial da mudança descontinuará as APIs existentes durante uma versão secundária. A execução de seu aplicativo após essa alteração terá muitos avisos, mas nada irá quebrar e continuará a funcionar como está.
 
-After a cool down phase of minimum 4 weeks, during the next major release, we will remove the deprecated APIs. Removing the old/dead code is important to ensure the framework codebase is well maintained and not bloated with all the past variations.
+Após uma fase de espera de no mínimo 4 semanas, durante o lançamento de uma próxima versão principal, removeremos as APIs descontinuadas. Remover o código antigo/morto é importante para garantir que a base de código do framework seja bem mantida e não inchada com todas as variações anteriores.
 
-The following changes are not subject to breaking changes.
+As mudanças a seguir não estão submetidas ao processo das mudanças não retrocompatíveis:
 
-- **Undocumented APIs and internal data structures** can get changed during any release. So, if you are relying on any undocumented APIs or private class members, then you are on own, when we change or restructure them.
-- **Alpha and next versions of AdonisJS** may receive breaking changes without a major version bump. We want the creative freedom to iterate quickly based upon our learnings in the alpha period.
+- **APIs não documentadas e estruturas de dados internas** podem ser modificadas em qualquer lançamento. Então se você depende de alguma API não documentada ou atributos privados de classes, você estará por sua conta, quando alterarmos ou restruturarmos eles.
+- **Versões alpha e next do AdonisJS** podem receber mudanças não retrocompatíveis sem um aumento da versão principal. Queremos liberdade criativa para iterar rapidamente sobre nossos aprendizados no período alpha.
 
-## Release cycle
-AdonisJS follows a 8 week release cycle for shipping new features or publishing breaking changes. The critical bug fixes and security patches are usually released right away.
+## Ciclo de lançamento
+O AdonisJS segue um ciclo de lançamento de 8 semanas para o envio de novas funcionalidades ou publicação de mudanças não retrocompatíveis. As correções de bugs críticos e patches de segurança geralmente são lançados imediatamente.
 
-You can checkout our [roadmap on Trello](https://trello.com/b/3klaHbfP/adonisjs-roadmap) and [what's in the next release card](https://trello.com/c/1qTLaVPl/44-may-2021) to know about the upcoming changes.
+Você pode checar nosso [roadmap no Trello](https://trello.com/b/3klaHbfP/adonisjs-roadmap) e [o que tem no próximo cartão de lançamento](https://trello.com/c/1qTLaVPl/44-may-2021) para saber sobre as mudanças futuras.
