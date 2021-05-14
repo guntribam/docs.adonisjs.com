@@ -1,22 +1,24 @@
 ---
-summary: Technical introduction to the framework and documentation structure.
+summary: Introdução técnica ao framework e à estrutura do documento.
 ---
 
-Welcome to AdonisJS!
+Bem vindo ao AdonisJS!
 
-This is the official documentation website for the framework. We have divided the documentation into multiple groups, each trying to address a specific use case or audience.
+Este é o site oficial da documentação do framework. Dividimos a documentação em múltiplos grupos, cada um tratando um caso de uso específico e audiência.
 
-Please read the [AdonisJS at a glance](https://adonisjs.com/adonisjs-at-a-glance) document if you are unsure whether AdonisJS will fit your needs or match the programming style.
+Por favor leia o documento [AdonisJS em resumo](https://adonisjs.com/adonisjs-at-a-glance) se você está inseguro quanto à adequação do AdonisJS às suas necessidades ou estilo de programação.
 
-## TypeScript usage
+## Uso de TypeScript
 
-AdonisJS is a backend framework for Node.js. The framework is written in TypeScript, and the application you will create using AdonisJS is also going to be in TypeScript.
+AdonisJS é um framework backend para Node.js. O framework é escrito em TypeScript e a aplicação que você irá criar também será em TypeScript.
 
-We are very particular about how we leverage TypeScript and maintain a good balance between the static type safety and the visual noise.
+Somos bem particulares sobre como utilizamos TypeScript de modo a  manter um bom equilíbrio entre tipagem estática segura e ruído visual.
 
-If you have never used TypeScript, we recommend learning the basics of the language first and then using AdonisJS.
+Se você nunca usou TypeScript, recomendamos aprender o básico da linguagem primeiro para então utilizar AdonisJS.
 
-## Familiarity with Node.js 
+## Familiaridade com Node.js 
+
+Esperamos, também, que você tenha familiaridade com o ecossitema Node.js e programação assíncrona no geral. Supomos que você vem de uma linguagem baseada em threads
 
 We also expect you to be familiar with the Node.js ecosystem and asynchronous programming in general. Suppose you are coming from a threaded language like PHP or Ruby. In that case, we recommend educating yourself with the Node.js event loop and understand how it is different from a threaded environment.
 
