@@ -32,14 +32,14 @@ O processo de instalação solicita as seguintes escolhas.
 #### Estrutura do projeto
 Você pode escolher uma entre as seguintes estruturas de projeto:
 
-- A estrutura de projeto `web` é ideal para criar as clássicas aplicações renderizadas no servidor. Configuramos o suporte à sessões e instalamos o AdonisJS template engine.
-- A estrutura de projeto `api` é ideal para criar um servidor de API.
-- A estrutura de projeto `slim` cria a menor aplicação AdonisJS possível e não instala nenhum pacote adicional, exceto o núcleo do framework.
+- `web` é a estrutura de projeto ideal para criar as clássicas aplicações renderizadas no servidor. Configuramos o suporte à sessões e instalamos o AdonisJS template engine.
+- `api` é a estrutura de projeto ideal para criar um servidor de API.
+- `slim` á a estrutura de projeto que cria a menor aplicação AdonisJS possível e não instala nenhum pacote adicional, exceto o núcleo do framework.
 
 ---
 
 #### Nome do projeto
-O nome do projeto. Definimos essa variável dentro do arquivo `package.json`.
+O nome do projeto. Definimos o valor dessa solicitação dentro do arquivo `package.json`.
 
 ---
 
