@@ -1,8 +1,8 @@
 ---
-summary: Começar criando e executando uma nova aplicação AdonisJS
+summary: Comece criando e executando uma nova aplicação AdonisJS
 ---
 
-AdonisJs é um framework Node.js e, portanto, requer o Node.js instalado no seu computador. Para ser mais preciso, exigimos `Node.js> = 14.15.4`, junto com` npm> = 6.0.0`.
+AdonisJs é um framework Node.js e, portanto, requer o Node.js instalado no seu computador. Para ser mais preciso, exigimos `Node.js> = 14.15.4`, junto com `npm> = 6.0.0`.
 
 Você pode checar a versão do Node.js e npm rodando os comandos a seguir:
 
@@ -32,9 +32,9 @@ O processo de instalação solicita as seguintes escolhas.
 #### Estrutura do projeto
 Você pode escolher uma entre as seguintes estruturas de projeto:
 
-- `web` estrutura de projeto ideal para criar as clássicas aplicações renderizadas no servidor. Configuramos o suporte à sessões e instalamos o AdonisJS template engine.
-- `api` estrutura de projeto ideal para criar um servidor de API.
-- `slim` estrutura de projeto que cria a menor aplicação AdonisJS possível e não instala nenhum pacote adicional, exceto o núcleo do framework.
+- `web` é a estrutura de projeto ideal para criar as clássicas aplicações renderizadas no servidor. Configuramos o suporte à sessões e instalamos o AdonisJS template engine.
+- `api` é a estrutura de projeto ideal para criar um servidor de API.
+- `slim` á a estrutura de projeto que cria a menor aplicação AdonisJS possível e não instala nenhum pacote adicional, exceto o núcleo do framework.
 
 ---
 
@@ -44,12 +44,12 @@ O nome do projeto. Definimos o valor dessa solicitação dentro do arquivo `pack
 ---
 
 #### Configurar eslint/prettier
-Opcionalmente, você pode configurar Eslint e pretier. Ambos pacotes são configurados com as definições utilizadas pelo time principal do AdonisJS
+Opcionalmente, você pode configurar Eslint e prettier. Ambos pacotes são configurados com as definições utilizadas pelo time principal do AdonisJS
 
 ---
 
 #### Configurar webpack encore
-Opcionalmente, você pode configurar [webpack encore](./http/assets-manager.md) para empacotar e servir as dependências de frontend. 
+Opcionalmente, você pode configurar [webpack encore](./http/assets-manager.md) para empacotar e servir as dependências de frontend.
 
 Note que o AdonisJS é um framework backend e não se preocupa com ferramentas de build de frontend. Portanto, a configuração do webpack é opcional
 
