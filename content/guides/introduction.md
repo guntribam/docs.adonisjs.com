@@ -6,7 +6,7 @@ Bem vindo ao AdonisJS!
 
 Este é o site oficial da documentação do framework. Dividimos a documentação em múltiplos grupos, cada um tratando um caso de uso específico e audiência.
 
-Por favor leia o documento [AdonisJS em resumo](https://adonisjs.com/adonisjs-at-a-glance) se você está inseguro quanto à adequação do AdonisJS às suas necessidades ou estilo de programação.
+Por favor leia o documento [AdonisJS num relance](https://adonisjs.com/adonisjs-at-a-glance) se você está inseguro quanto à adequação do AdonisJS às suas necessidades ou estilo de programação.
 
 ## Uso de TypeScript
 
@@ -29,9 +29,9 @@ Os guias também têm documentação para os pacotes oficiais do AdonisJS, ou se
 
 ## Referência
 
-Módulos com maior superfície de API como **Database** e **Validator** também são documentados dentro dos guias de referência
+Módulos com uma API maior, como **Database** e **Validator**, também são documentados dentro dos guias de referência
 
-Colocar todas as regras de validação e métodos do construtor de consultas de banco de dados dentro dos guias vão superlotá-los, portanto, eles serão movidos para guias de referência.
+Colocar todas as regras de validação e todos os métodos do construtor de consultas de banco de dados, dentro dos guias vão superlotá-los, portanto, eles foram movidos para guias de referência.
 
 ## Cookbooks
 
